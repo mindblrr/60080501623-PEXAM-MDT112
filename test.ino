@@ -33,6 +33,24 @@ void setup(){
   Serial.begin(9600);
   pinMode(mt,OUTPUT);
   pinMode(mt1,OUTPUT);
+  digitalWrite(mt,LOW);
+  digitalWrite(mt1,HIGH);
+  delay(2000);
+  Serial.print("TURN CCW");
+}
+
+void loop(){
+  
+}
+
+4. complete
+
+int mt=3;
+int mt1=4;
+void setup(){
+  Serial.begin(9600);
+  pinMode(mt,OUTPUT);
+  pinMode(mt1,OUTPUT);
   digitalWrite(mt,HIGH);
   digitalWrite(mt1,LOW);
   delay(3000);
