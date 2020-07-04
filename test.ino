@@ -20,6 +20,10 @@ int buzzer = 10;
 void setup() {
   Serial.begin(9600);
   Serial.print("Hello MDT");
+    pinMode(buzzer, OUTPUT);
+    tone(buzzer, 800,200);
+    delay(400);
+    noTone(buzzer);
 }
 
 void loop() {
